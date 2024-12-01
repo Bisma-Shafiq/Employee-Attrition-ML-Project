@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Attrition Prediction</title>
+</head>
+<body>
+    <h1>Employee Attrition Prediction</h1>
+    <form action="/predict" method="POST">
+        <label for="satisfaction_level">Satisfaction Level:</label>
+        <input type="text" name="satisfaction_level" required><br><br>
+        
+        <label for="last_evaluation">Last Evaluation:</label>
+        <input type="text" name="last_evaluation" required><br><br>
+        
+        <label for="number_project">Number of Projects:</label>
+        <input type="text" name="number_project" required><br><br>
+        
+        <label for="average_monthly_hours">Average Monthly Hours:</label>
+        <input type="text" name="average_monthly_hours" required><br><br>
+        
+        <label for="time_spend_company">Time Spent in Company:</label>
+        <input type="text" name="time_spend_company" required><br><br>
+        
+        <label for="Work_accident">Work Accident (1/0):</label>
+        <input type="text" name="Work_accident" required><br><br>
+        
+        <label for="promotion_last_5years">Promotion in Last 5 Years (1/0):</label>
+        <input type="text" name="promotion_last_5years" required><br><br>
+        
+        <label for="Department">Department (Numeric):</label>
+        <input type="text" name="Department" required><br><br>
+        
+        <label for="salary">Salary (Numeric):</label>
+        <input type="text" name="salary" required><br><br>
+        
+        <button type="submit">Predict</button>
+    </form>
+    <h2>{{ result }}</h2>
+</body>
+</html>
